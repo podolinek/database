@@ -672,7 +672,7 @@ class SqlBuilder
 				(?P<del> [.:] )
 				(?P<node> (?&del)? (?&word) (\((?&word)\))? )
 			)
-			(?P<chain> (?!\.) (?&node)*)  \. (?P<column> (?&word) | \*  )
+			(?P<chain> (?!\.) ((?&node))*)  \. (?P<column> (?&word) | \*  )
 		~xi';
 	}
 
